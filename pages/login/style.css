@@ -1,0 +1,166 @@
+:root {
+    --pink-color: #C75F77;
+    --background-pink-color: #F9E6EA;
+    --background-color: #FFFFFF;
+    --input-color: #F9E6EA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro';
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.coluna-1 {
+    background-color: var(--background-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.formulario h2 {
+    font-weight: bold;
+    font-size: 35px;    
+    margin-bottom: 8%;
+}
+
+.formulario input {
+    background-color: var(--input-color);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+}
+
+.label-input {
+    background-color:  var(--input-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.label-input img {
+    padding: 4px 3px 4px 4px;
+}
+
+.label-input a {
+    padding: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.label-input a:hover {
+    color:#333232d8;
+    transition: all 0.5s ease;
+}
+
+.formulario .btn {
+    background-color: var(--pink-color);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 50px;
+    margin: 10px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.formulario btn:hover {
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.descricao{
+    margin-top: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+img{
+    width: 25px;
+    height: 25px;
+}
+
+.item-social-media{
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    line-height: 55px;
+}
+
+.opcoes {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.opcoes a {
+    text-decoration:  none;
+    color: blue;
+}
+
+.opcoes a:hover {
+    text-decoration: none;
+    color: #5b9dff;
+}
+
+.coluna-2 {
+    background-color: var(--pink-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.coluna-2 h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.coluna-2 span {
+    color: #fff;
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+.coluna-2 img {
+    width: 300px;
+    height: 250px;
+}
