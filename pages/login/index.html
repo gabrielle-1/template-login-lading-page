@@ -26,8 +26,9 @@
 
                 <label for="password" class="label-input">                                
                     <img src="../../imgs/padlock.png" alt="Image Padlock">
-                    <input type="password" placeholder="Password"/>    
-                    <a onclick="showPassword()">Display</a>
+                    <input type="password" id="password" placeholder="Password"/>    
+                    <a id="display" onclick="showHidePassword('display')">Display</a>
+                    <a id="hide" onclick="showHidePassword('hide')" style="display:none">Hide</a>
                 </label>
 
                 <a class="btn" href="../main-page/index.html">Enter</a>
@@ -58,6 +59,31 @@
             <img class="imagem" src="../../imgs/caixinha.png" alt="">
         </div>
     </div>
+
+    <script>
+
+        function showHidePassword(type) {
+
+            const display = document.getElementById("display");
+            const hide = document.getElementById("hide");
+            const password = document.getElementById("password");
+                        
+            if (type == "display") {
+                if  (password.type == 'password') {
+                    hide.style.display = 'block';
+                    display.style.display = 'none';
+                    password.type = 'text';
+                }
+            } else if (type == "hide") {
+                if  (password.type == 'text') {
+                    display.style.display = 'block';
+                    hide.style.display = 'none';
+                    password.type = 'password';
+                }
+            }
+        }
+
+    </script>
 
 </body>
 </html>
