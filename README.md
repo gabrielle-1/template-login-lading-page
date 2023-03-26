@@ -1,4 +1,4 @@
-# Template Login Landing Page
+# Template Login & Landing Page
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/gabrielle-1/to-do-list/blob/master/LICENCE) 
 
